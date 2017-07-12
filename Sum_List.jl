@@ -11,7 +11,6 @@ function Sum()
 end
 
 s, _ = Sum()
-
 t = 0
 
 for j=1:10

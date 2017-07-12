@@ -1,16 +1,5 @@
 List = [1:1e+06...]
 
-# t = 0
-# for j = 1:10
-#     start=time()
-#     variable = 0
-#     for i in List
-#         variable = variable + i 
-#     end
-#     elapsed=time()-start
-#     t += elapsed
-# end
-
 function Sum()
     start = time()
     s = 0

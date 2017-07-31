@@ -90,7 +90,7 @@ function Calc(i1::Vector, i2::Vector)
     KE[N+1] = Kinetic(v)
     TE[N+1] = KE[N+1] + PE[N+1]
    elapsed = time() - start
-    println(elapsed)
+    println("걸린시간 : ", elapsed)
     
     return C_x, C_y, C_z, KE, PE, TE
 end
@@ -102,7 +102,7 @@ function main()
     C2_x, C2_y, C2_z, KE2, PE2, TE2 = Calc(l1, l2)
 
     R1 = Vector(C2_x[N+1], C2_y[N+1], C2_z[N+1])
-    println(Plus(i1, Mul(R1, -1.)))
+    println("오차 : ",Plus(i1, Mul(R1, -1.)))
 
     T = [1:N+1...];
     figure(figsize=(10,6), dpi=600)

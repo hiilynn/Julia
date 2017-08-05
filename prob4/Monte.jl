@@ -1,3 +1,6 @@
+
+println(" -- In 2D -- ")
+
 function D2()
     s = 0
     n = [1:1e+07...]
@@ -12,6 +15,8 @@ println("probability : ", c)
 println("error : ", abs(pi - c) /pi * 100)
 end
 
+println(" -- In 3D -- ")
+
 function D3()
     s = 0
     n = [1:1e+07...]
@@ -25,6 +30,8 @@ c = (s/length(n))*6
 println("probability : ", c)
 println("error : ", abs(pi - c) /pi * 100)
 end
+
+println(" -- How long it takes to calculate -- ")
 
 function main()
     @time D2()

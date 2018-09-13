@@ -1,0 +1,7 @@
+functional programming
+
+- filter
+- map
+- reduce
+- takewhile(using lazy)
+
